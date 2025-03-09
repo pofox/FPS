@@ -28034,6 +28034,7 @@ MonoBehaviour:
   - rid: 8641309474923479148
   - rid: 8641309474923479149
   - rid: 8641309474923479150
+  - rid: 8641309495132160403
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
@@ -28068,6 +28069,14 @@ MonoBehaviour:
         - {fileID: 241785050}
         - {fileID: 565555974}
         - {fileID: 458051218}
+    - rid: 8641309495132160403
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 179389553991544018
+          m_Value1: 4095871386659591280
+        Name: damegezone
+        m_Value: {fileID: 7108222320351629092, guid: 5c91de6144a089041908dc1a2aa75c66, type: 3}
 --- !u!195 &743789228
 NavMeshAgent:
   m_ObjectHideFlags: 0
