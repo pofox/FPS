@@ -521,7 +521,7 @@ GameObject:
   - component: {fileID: 39227422}
   - component: {fileID: 39227424}
   - component: {fileID: 39227423}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: shape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12226,7 +12226,7 @@ GameObject:
   - component: {fileID: 233538494}
   - component: {fileID: 233538496}
   - component: {fileID: 233538495}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: shape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15505,7 +15505,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 831
+    m_Bits: 1855
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -22332,7 +22332,7 @@ GameObject:
   - component: {fileID: 567565825}
   - component: {fileID: 567565824}
   - component: {fileID: 567565823}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Enemy (2)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -28323,7 +28323,7 @@ GameObject:
   - component: {fileID: 743789229}
   - component: {fileID: 743789228}
   - component: {fileID: 743789227}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32680,7 +32680,7 @@ GameObject:
   - component: {fileID: 922545707}
   - component: {fileID: 922545706}
   - component: {fileID: 922545705}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Enemy (4)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -41382,7 +41382,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 10
   m_Depth: 0
   m_CullingMask:
@@ -49354,7 +49354,7 @@ GameObject:
   - component: {fileID: 1181271764}
   - component: {fileID: 1181271763}
   - component: {fileID: 1181271762}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Enemy (3)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -56435,7 +56435,7 @@ GameObject:
   - component: {fileID: 1402169462}
   - component: {fileID: 1402169464}
   - component: {fileID: 1402169463}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: shape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61629,7 +61629,7 @@ GameObject:
   - component: {fileID: 1583237553}
   - component: {fileID: 1583237555}
   - component: {fileID: 1583237554}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: shape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67790,7 +67790,7 @@ GameObject:
   - component: {fileID: 1778268691}
   - component: {fileID: 1778268690}
   - component: {fileID: 1778268689}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Enemy (5)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -70883,7 +70883,7 @@ GameObject:
   - component: {fileID: 1879601274}
   - component: {fileID: 1879601276}
   - component: {fileID: 1879601275}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: shape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71386,7 +71386,7 @@ GameObject:
   - component: {fileID: 1908442515}
   - component: {fileID: 1908442514}
   - component: {fileID: 1908442520}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Enemy (1)
   m_TagString: enemy
   m_Icon: {fileID: 0}

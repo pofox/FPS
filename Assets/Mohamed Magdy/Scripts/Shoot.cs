@@ -56,6 +56,10 @@ public class Shoot : MonoBehaviour
                     GameObject plane = Instantiate(shootImage, hitInfo.point + 0.01f * hitInfo.normal, Quaternion.FromToRotation(shootImage.transform.up, hitInfo.normal));
                     plane.SetActive(true);
                     plane.transform.localRotation = Quaternion.AngleAxis(Random.value * 360, plane.transform.up) * plane.transform.localRotation;
+                    if(hitInfo.collider.tag == "enemy2")
+                    {
+                        Destroy(hitInfo.collider.gameObject);
+                    }
                 }
                 else
                 {
