@@ -53,7 +53,8 @@ public class Shoot : MonoBehaviour
             if (hitInfo.collider != null) {
                 if (hitInfo.collider.gameObject.tag == "enemy2")
                 {
-                    Debug.Log(hitInfo.collider.gameObject.name);
+                    Destroy(hitInfo.collider.gameObject);
+                    GetComponent<PlayerStats>().AddScore(5);
                     return;
                 }
 
