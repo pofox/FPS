@@ -54374,7 +54374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 383
+    m_Bits: 1407
   crosshair: {fileID: 96427279}
   shootImage: {fileID: 78852127}
   weapon: {fileID: 1363515976}

@@ -51,20 +51,21 @@ public class Shoot : MonoBehaviour
         if(Physics.Raycast(cameraTransform.position, cameraTransform.forward,out RaycastHit hitInfo, (float)weapon.declarations.Get("ShootingRange"),layerMask))
         {
             if (hitInfo.collider != null) {
-                if (hitInfo.collider.tag != "enemy")
+                if (hitInfo.collider.gameObject.tag == "enemy2")
                 {
-                    GameObject plane = Instantiate(shootImage, hitInfo.point + 0.01f * hitInfo.normal, Quaternion.FromToRotation(shootImage.transform.up, hitInfo.normal));
-                    plane.SetActive(true);
-                    plane.transform.localRotation = Quaternion.AngleAxis(Random.value * 360, plane.transform.up) * plane.transform.localRotation;
-                    if(hitInfo.collider.tag == "enemy2")
-                    {
-                        Destroy(hitInfo.collider.gameObject);
-                    }
+                    Debug.Log(hitInfo.collider.gameObject.name);
+                    return;
                 }
-                else
+
+                if (hitInfo.collider.gameObject.tag == "enemy")
                 {
                     hitInfo.collider.GetComponent<Enemy>().TakeDamege((float)weapon.declarations.Get("damege"));
+                    return;
                 }
+                
+                GameObject plane = Instantiate(shootImage, hitInfo.point + 0.01f * hitInfo.normal, Quaternion.FromToRotation(shootImage.transform.up, hitInfo.normal));
+                plane.SetActive(true);
+                plane.transform.localRotation = Quaternion.AngleAxis(Random.value * 360, plane.transform.up) * plane.transform.localRotation;
             }
         }
     }
