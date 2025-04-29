@@ -4,8 +4,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.InputSystem;
-using System.IO;
-using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
@@ -35,6 +33,8 @@ public class GameManager : MonoBehaviour
     {
         _instance = this;
         Save = JsonUtility.FromJson<SaveDataList>(savefile.text);
+        //PlayerPrefs.DeleteAll();
+        if (PlayerPrefs.HasKey("Save")) Save.data.Add(JsonUtility.FromJson<SaveData>(PlayerPrefs.GetString("Save")));
         SceneManager.LoadScene(1,LoadSceneMode.Additive);
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -235,6 +235,10 @@ public class GameManager : MonoBehaviour
     }
     void SaveToFile()
     {
-        File.WriteAllText(Application.dataPath + "/save.json", JsonUtility.ToJson(Save));
+        //File.WriteAllText(Application.dataPath + "/save.json", JsonUtility.ToJson(Save));
+        if (Save.data.Count == 2)
+        {
+            PlayerPrefs.SetString("Save", JsonUtility.ToJson(Save.data[1]));
+        }
     }
 }
